@@ -3,7 +3,7 @@ import torch
 import numpy as np
 tokenizer = AutoTokenizer.from_pretrained("microsoft/codebert-base")
 model = AutoModel.from_pretrained("microsoft/codebert-base")
-with open("test1.py", "r") as f:
+with open("test.c", "r") as f:
     code = f.read()
 
 code_tokens = tokenizer.tokenize(code)
